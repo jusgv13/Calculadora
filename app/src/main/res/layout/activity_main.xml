@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2,3,4">
+
+    //Numeros
+    <TableRow>
+        <TextView android:id="@+id/textView" android:text="@string/textoInicio" android:layout_span="4" style="@style/TextoPrincipal"></TextView>
+    </TableRow>
+
+    //Botones de la Calculadora
+
+    //Primera Fila
+    <TableRow>
+        <Button android:id="@+id/buttonC" android:onClick="borrar" android:text="@string/buttonClear">  </Button>
+        <Button android:id="@+id/buttonSigno" android:onClick="buttonData" android:text="@string/buttonSigno">  </Button>
+        <Button android:id="@+id/buttonPorcentaje" android:onClick="buttonData" android:text="@string/buttonPorcentaje">  </Button>
+        <Button android:id="@+id/buttonDivide" android:onClick="buttonData" android:text="@string/buttonDivide" style="@style/ButtonText" >  </Button>
+    </TableRow>
+
+    //Segunda Fila
+    <TableRow>
+        <Button android:id="@+id/button7" android:onClick="buttonData" android:text="7">  </Button>
+        <Button android:id="@+id/button8" android:onClick="buttonData" android:text="8">  </Button>
+        <Button android:id="@+id/button9" android:onClick="buttonData" android:text="9">  </Button>
+        <Button android:id="@+id/buttonMulti" android:onClick="buttonData" android:text="@string/buttonMulti" style="@style/ButtonText" >  </Button>
+    </TableRow>
+
+    //Tercera Fila
+    <TableRow>
+        <Button android:id="@+id/button4" android:onClick="buttonData" android:text="4">  </Button>
+        <Button android:id="@+id/button5" android:onClick="buttonData" android:text="5">  </Button>
+        <Button android:id="@+id/button6" android:onClick="buttonData" android:text="6">  </Button>
+        <Button android:id="@+id/buttonResta" android:onClick="buttonData" android:text="-" style="@style/ButtonText" >  </Button>
+    </TableRow>
+
+    //Cuarta Fila
+    <TableRow>
+        <Button android:id="@+id/button1" android:onClick="buttonData" android:text="1">  </Button>
+        <Button android:id="@+id/button2" android:onClick="buttonData" android:text="2">  </Button>
+        <Button android:id="@+id/button3" android:onClick="buttonData" android:text="3">  </Button>
+        <Button android:id="@+id/buttonSuma" android:onClick="buttonData" android:text="+" style="@style/ButtonText" >  </Button>
+    </TableRow>
+
+    //Quinta Fila
+    <TableRow>
+        <Button android:id="@+id/button0" android:onClick="buttonData" android:text="0" android:layout_span="2">  </Button>
+        <Button android:id="@+id/buttonComa" android:onClick="buttonData" android:text="@string/buttonComa">  </Button>
+        <Button android:id="@+id/buttonIgual" android:onClick="calcula" android:text="=" style="@style/ButtonText" >  </Button>
+    </TableRow>
+
+
+</TableLayout>
